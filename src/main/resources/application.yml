@@ -16,7 +16,7 @@ spring:
     host: localhost
     port: 6379
 
-#tomcat端口
+#tomcat端口拦截器
 #日志记录级别
 logging:
   level:
