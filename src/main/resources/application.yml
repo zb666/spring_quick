@@ -1,0 +1,31 @@
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/tbuser
+  username: root
+  password: root
+
+#profiles:
+  #active: abc,def 这是用来导入外部的yml文件
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/tbuser
+    username: root
+    password: root
+  redis:
+    host: localhost
+    port: 6379
+
+#tomcat端口
+#日志记录级别
+logging:
+  level:
+    com.itheima: debug
+    org.springframework: info
+mybatis:
+  # 实体类别名包路径
+  type-aliases-package: com.itheima.pojo
+  # 映射文件路径
+  # mapper-locations: classpath:mappers/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
